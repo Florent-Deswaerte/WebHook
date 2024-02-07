@@ -14,6 +14,7 @@
     </properties>
 
     <dependencies>
+        <!-- Dépendances de votre projet -->
         <dependency>
             <groupId>org.apache.ant</groupId>
             <artifactId>ant</artifactId>
@@ -24,6 +25,7 @@
 
     <build>
         <plugins>
+            <!-- Plugin exec-maven-plugin pour exécuter les tests Python avec pytest -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
@@ -36,9 +38,11 @@
                             <goal>exec</goal>
                         </goals>
                         <configuration>
-                            <executable>C:\Users\clash\OneDrive\Bureau\Webhook\WebHook\venv\Scripts\python.exe</executable>
+                            <executable>pytest</executable>
                             <workingDirectory>${project.basedir}/src/test/python</workingDirectory>
                             <arguments>
+                                <argument>--junitxml</argument>
+                                <argument>${project.build.directory}/surefire-reports/test-results.xml</argument>
                                 <argument>test_addition.py</argument>
                             </arguments>
                         </configuration>
