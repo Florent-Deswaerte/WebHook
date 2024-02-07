@@ -36,7 +36,7 @@
                             <goal>exec</goal>
                         </goals>
                         <configuration>
-                            <executable>py</executable>
+                            <executable>C:\Users\clash\OneDrive\Bureau\Webhook\WebHook\venv\Scripts\python.exe</executable>
                             <workingDirectory>${project.basedir}/src/test/python</workingDirectory>
                             <arguments>
                                 <argument>test_addition.py</argument>
