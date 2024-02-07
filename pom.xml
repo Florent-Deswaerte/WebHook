@@ -41,9 +41,10 @@
                             <executable>C:\Users\clash\OneDrive\Bureau\Webhook\WebHook\venv\Scripts\python.exe</executable>
                             <workingDirectory>${project.basedir}/src/test/python</workingDirectory>
                             <arguments>
+                                <argument>-m</argument>
+                                <argument>pytest</argument>
                                 <argument>--junitxml</argument>
                                 <argument>${project.build.directory}/surefire-reports/test-results.xml</argument>
-                                <argument>test_addition.py</argument>
                             </arguments>
                         </configuration>
                     </execution>
