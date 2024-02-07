@@ -38,7 +38,7 @@
                             <goal>exec</goal>
                         </goals>
                         <configuration>
-                            <executable>pytest</executable>
+                            <executable>C:\Users\clash\OneDrive\Bureau\Webhook\WebHook\venv\Scripts\python.exe</executable>
                             <workingDirectory>${project.basedir}/src/test/python</workingDirectory>
                             <arguments>
                                 <argument>--junitxml</argument>
