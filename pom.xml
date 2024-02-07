@@ -37,7 +37,7 @@
                         </goals>
                         <configuration>
                             <executable>python</executable>
-                            <workingDirectory>${project.basedir}/src/test/python</workingDirectory>
+                            <workingDirectory>${project.basedir}/src/test</workingDirectory>
                             <arguments>
                                 <argument>test_addition.py</argument>
                             </arguments>
